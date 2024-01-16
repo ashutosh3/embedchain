@@ -14,5 +14,5 @@ class OllamaEmbedder(BaseEmbedder):
         embedding_fn = BaseEmbedder._langchain_default_concept(embeddings)
         self.set_embedding_fn(embedding_fn=embedding_fn)
 
-        vector_dimension = VectorDimensions.HUGGING_FACE.value
+        vector_dimension = VectorDimensions.OLLAMA.value
         self.set_vector_dimension(vector_dimension=vector_dimension)
